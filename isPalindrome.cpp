@@ -5,12 +5,12 @@ using namespace std;
 bool isPalindrome(int n){
     bool result = false;
     int reverse = 0;
-    int num = n;
-    while(n!=0){
-        reverse = reverse*10 + (n%10);
-        n = n/10;
+    int temp = n;
+    while(temp!=0){
+        reverse = reverse*10 + (temp%10);
+        temp = temp/10;
     }
-    if (reverse == num){
+    if (reverse == n){
         return true;
     } else{
         return false;
