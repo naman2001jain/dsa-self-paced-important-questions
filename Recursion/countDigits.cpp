@@ -11,5 +11,7 @@ int countDigits(int n)
 
 int main()
 {
-    cout<<countDigits(1);
+    int n;
+    cin>>n;
+    cout<<countDigits(n);
 }
