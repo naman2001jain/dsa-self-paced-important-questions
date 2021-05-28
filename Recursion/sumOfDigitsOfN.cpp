@@ -1,14 +1,17 @@
 //print sum of digits of n using recursion.
 #include<iostream>
 using namespace std;
-int countDigits(int n)
+int countSumOfDigits(int n)
 {
-    return n <= 9 ? 1 : 1 + countDigits(n / 10);
+    if(n==0){
+        return 0;
+    }
+    return (n%10) + countSumOfDigits(n/10);
 }
 
 int main(){
     int n;
     cin>>n;
 
-    cout<<"sum is:"<<countDigits(n);
+    cout<<"sum is:"<<countSumOfDigits(n);
 }
