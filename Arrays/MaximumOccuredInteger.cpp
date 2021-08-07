@@ -16,6 +16,8 @@ int maxOccured(int L[], int R[], int n, int maxx){
     }
     return maxIndex;
 }
+
+//driver program to run the code
 int main()
 {   
     int n;
