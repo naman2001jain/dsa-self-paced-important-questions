@@ -22,6 +22,8 @@ int findGCD(int a, int b){
 }
 */
 
+
+//driver program to run the code
 int main()
 {
     int a,b;
